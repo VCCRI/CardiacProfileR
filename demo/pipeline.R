@@ -57,7 +57,7 @@ readline("press any key to continue")
 ##################
 
 # load single file
-energy_df <- load_tcx_file(single_tcx_file_path)
+# energy_df <- load_tcx_file(single_tcx_file_path)
 
 ## OR ##
 
