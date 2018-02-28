@@ -15,6 +15,7 @@
 #       - multiple aggregate profiles
 #       - can add optional labelled sections/shading
 
+readline("press any key to continue")
 
 ################
 # dependancies #
@@ -32,14 +33,15 @@ library(XML)
 # load this package
 library(hrdp)
 
+readline("press any key to continue")
 
 ############
 # settings #
 ############
 
 # paths to example files and directory
-single_tcx_file_path <- "data/stair_climb.tcx"
-directory_tcx_files <- "data/exercises/"
+single_tcx_file_path <- system.file("extdata", "stair_climb.tcx", package = "CardiacProfileR")
+directory_tcx_files <- system.file("extdata", "exercises/", package = "CardiacProfileR")
 
 
 # used for profile creation
