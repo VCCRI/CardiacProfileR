@@ -2,20 +2,20 @@
 % Please edit documentation in R/tcx_loading.R
 \name{select_list}
 \alias{select_list}
-\title{Select elements of a named list using a regex on the name}
+\title{Select elements of a named list}
 \usage{
 select_list(list, regex)
 }
 \arguments{
-\item{list}{A named list of anything}
+\item{list}{A named list}
 
 \item{regex}{A regular expression used to select elements}
 }
 \value{
-Subset of the original list where the name matches \code{regex}
+subset of the original list where the name matches \code{regex}
 }
 \description{
-Select elements of a named list using a regex on the name
+select elements of a named list using a regex on the name.
 }
 \examples{
 select(list("a" = 1, "abba" = 2, "b" = 3), "a")

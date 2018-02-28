@@ -2,21 +2,21 @@
 % Please edit documentation in R/tcx_loading.R
 \name{load_tcx_dir}
 \alias{load_tcx_dir}
-\title{Load all tcx files in a directory and load into a list of energy dataframes}
+\title{Process all tcx files in a directory}
 \usage{
 load_tcx_dir(directory, recursive = TRUE)
 }
 \arguments{
-\item{directory}{A filepath to a directory}
+\item{directory}{A filepath to a directory.}
 
-\item{recursive}{Boolean to determine if data loading is recursively or not}
+\item{recursive}{Process tcx files in all levels of the directory or only the top level.}
 }
 \value{
-Named list of energy dataframes where the name is the path to the tcx file.
+named list of energy dataframes where the name is the path to the tcx file.
     See \code{\link{load_tcx_file}} for a description of an energy dataframe.
 }
 \description{
-Load all tcx files in a directory and load into a list of energy dataframes
+process all tcx files in a directory and produce a list of energy dataframes.
 }
 \examples{
 load_tcx_dir("topDir/secondLevel/")

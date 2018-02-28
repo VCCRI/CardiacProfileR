@@ -5,7 +5,8 @@
 \title{Get profiles from energy dataframes with added information ready for plotting
 with plot_3d_profiles}
 \usage{
-get_energy_profiles(energy_dfs, buffer_start, buffer_end, scale)
+get_energy_profiles(energy_dfs, buffer_start, buffer_end, scale,
+  time_threshold = 15)
 }
 \arguments{
 \item{energy_dfs}{list of profiles or aggregate profiles to be plotted
@@ -30,6 +31,7 @@ prepare data to be plotted by plot_3d_profiles
 
 Other plotting functions: \code{\link{add_sections}},
   \code{\link{get_color}}, \code{\link{min_max_plot}},
+  \code{\link{plot_3d_landscape}},
   \code{\link{plot_3d_profiles}},
   \code{\link{plot_active}},
   \code{\link{plot_features_profiles}},

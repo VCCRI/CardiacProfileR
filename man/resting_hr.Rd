@@ -7,13 +7,11 @@
 resting_hr(profile)
 }
 \arguments{
-\item{profile}{profile used to find resting heart rate
+\item{profile}{A profile used to find resting heart rate.
 See \code{\link{get_profile}} for a description of profile.}
-
-\item{scale}{The number of data points in each third of the final profile, used to find start of activity.}
 }
 \value{
-value of the average resting heart rate
+The value of the average resting heart rate
 }
 \description{
 find the resting heart rate by averaging the resting period before activity
@@ -21,8 +19,8 @@ find the resting heart rate by averaging the resting period before activity
 \seealso{
 \code{\link{get_profile}} for a description of profile.
 
-Other feature functions: \code{\link{coefficients}},
-  \code{\link{get_features}}, \code{\link{hr_change}},
-  \code{\link{max_hr}}, \code{\link{resting_indeces}},
-  \code{\link{slope}}
+Other feature functions: \code{\link{get_features}},
+  \code{\link{hr_change}}, \code{\link{max_hr}},
+  \code{\link{profile_coefficients}},
+  \code{\link{resting_indeces}}, \code{\link{slope}}
 }

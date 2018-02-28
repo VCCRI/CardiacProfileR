@@ -2,22 +2,22 @@
 % Please edit documentation in R/activity_extraction.R
 \name{start_end_points}
 \alias{start_end_points}
-\title{Finds the start and end points of activity in energy dataframe}
+\title{Finds the activity in an energy dataframe}
 \usage{
 start_end_points(energy_df, time_threshold = 15, rest_threshold = 5)
 }
 \arguments{
-\item{energy_df}{A dataframe with "energy" format as returned by \code{\link{load_tcx_file}}}
+\item{energy_df}{An energy data frame as returned by \code{\link{load_tcx_file}}.}
 
-\item{time_threshold}{The minimum number of seconds duration for an activity}
+\item{time_threshold}{The minimum number of seconds duration of an activity.}
 
-\item{rest_threshold}{The maximum number of resting seconds within and activity}
+\item{rest_threshold}{The maximum number of resting seconds within and activity.}
 }
 \value{
-Named list with \code{start_point} and \code{last_point} for the activity.
+named list with \code{start_point} and \code{end_point} for the activity.
 }
 \description{
-Finds the start and end points of activity in energy dataframe
+finds the first start and end points of activity in energy dataframe.
 }
 \examples{
 start_end_points(df)

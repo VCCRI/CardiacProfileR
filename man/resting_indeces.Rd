@@ -7,19 +7,17 @@
 resting_indeces(profile, min, buffer_end, rest_sec = 180, from_max = FALSE)
 }
 \arguments{
-\item{profile}{profile to be nomalised
+\item{profile}{A profile to be nomalised.
 See \code{\link{get_profile}} for a description of profile.}
 
 \item{min}{The number of minutes used to find heart rate recovery indicies.}
 
-\item{buffer_end}{The number seconds before activity included in profile.}
+\item{buffer_end}{The number seconds after activity included in the profile.}
 
 \item{rest_sec}{The number of seconds of recovery included in initial recovery period.}
 
 \item{from_max}{Start taking the resting indices from maximum heart rate, otherwise start at
 start of resting period.}
-
-\item{scale}{The number of data points in each third of the final profile.}
 }
 \value{
 Heart rate at min number of minutes after cessation of exercise
@@ -34,8 +32,8 @@ resting_indices(profile, 8, 500, 500)
 \seealso{
 \code{\link{get_profile}} for a description of profile.
 
-Other feature functions: \code{\link{coefficients}},
-  \code{\link{get_features}}, \code{\link{hr_change}},
-  \code{\link{max_hr}}, \code{\link{resting_hr}},
-  \code{\link{slope}}
+Other feature functions: \code{\link{get_features}},
+  \code{\link{hr_change}}, \code{\link{max_hr}},
+  \code{\link{profile_coefficients}},
+  \code{\link{resting_hr}}, \code{\link{slope}}
 }

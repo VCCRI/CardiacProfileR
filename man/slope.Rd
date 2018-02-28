@@ -7,16 +7,13 @@
 slope(profile, model_out = FALSE)
 }
 \arguments{
-\item{profile}{profile to be nomalised
+\item{profile}{The profile used to find the recovery slope.
 See \code{\link{get_profile}} for a description of profile.}
 
-\item{model_out}{Return entire model else just return the coefficients}
-
-\item{scale}{The number of data points in each third of the final profile.
-Used to find the start of activity}
+\item{model_out}{Return entire model or else just return the coefficients}
 }
 \value{
-coefficients of the model fit the region of the profile
+coefficients of the model fit the final recovery region of the profile
 }
 \description{
 fit regression line to the slope of the final recovery in a profile.
@@ -24,8 +21,8 @@ fit regression line to the slope of the final recovery in a profile.
 \seealso{
 \code{\link{get_profile}} for a description of profile.
 
-Other feature functions: \code{\link{coefficients}},
-  \code{\link{get_features}}, \code{\link{hr_change}},
-  \code{\link{max_hr}}, \code{\link{resting_hr}},
-  \code{\link{resting_indeces}}
+Other feature functions: \code{\link{get_features}},
+  \code{\link{hr_change}}, \code{\link{max_hr}},
+  \code{\link{profile_coefficients}},
+  \code{\link{resting_hr}}, \code{\link{resting_indeces}}
 }

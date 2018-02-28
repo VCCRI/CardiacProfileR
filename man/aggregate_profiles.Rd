@@ -7,11 +7,12 @@
 aggregate_profiles(profiles)
 }
 \arguments{
-\item{profiles}{List of profiles to be aggregated
-See \code{\link{get_profile}} for a description of profile.}
+\item{profiles}{List of profiles to be aggregated.
+See \code{\link{get_profile}} for a description of profile.
+The profiles must be of the same length.}
 }
 \value{
-List of means and standard deviations of heart rate at all data points.
+List of means and standard deviations of heart rate at all data points in a profile.
 }
 \description{
 Finds mean and standard deviation of multiple heart rate profiles

@@ -8,24 +8,22 @@ get_features(profiles, buffer_end, rest_sec = 180, degree_coef_active = 5,
   degree_coef_init_rec = 5)
 }
 \arguments{
-\item{profiles}{list of profiles such as returned by \code{\link{get_profile}} used to find features}
+\item{profiles}{A list of profiles such as returned by \code{\link{get_profile}} used to find features.}
 
-\item{buffer_end}{The number seconds before activity included in profile.}
+\item{buffer_end}{The number seconds after an activity included in the profiles.}
 
 \item{rest_sec}{The number of seconds of recovery included in initial recovery period.}
 
-\item{degree_coef_init_rec}{The degree of the polynomial fitted to initial recovery period of a profile
-see \code{\link{coefficients}} for details on fitting the polynomial
+\item{degree_coef_active}{The degree of the polynomial fitted to active period of a profile,
+see \code{\link{profile_coefficients}} for details on fitting the polynomial
 and \code{\link{get_profile}} for a description of a profile}
 
-\item{scale}{The number of data points in each third of the final profile.}
-
-\item{degree_coeff_active}{The degree of the polynomial fitted to active period of a profile
-see \code{\link{coefficients}} for details on fitting the polynomial
+\item{degree_coef_init_rec}{The degree of the polynomial fitted to initial recovery period of a profile
+see \code{\link{profile_coefficients}} for details on fitting the polynomial
 and \code{\link{get_profile}} for a description of a profile}
 }
 \value{
-Data frame containing features and labels with features from each profile on a new row
+Data frame containing features and labels with features from each profile on a new row.
 }
 \description{
 find all the features of a profile
@@ -36,10 +34,11 @@ get_features(profiles, 300, 500)
 }
 \seealso{
 \code{\link{get_profile}} for a description of a profile.
-\code{\link{coefficients}} for details of fitting the polynomials.
 
-Other feature functions: \code{\link{coefficients}},
-  \code{\link{hr_change}}, \code{\link{max_hr}},
+\code{\link{profile_coefficients}} for details of fitting the polynomials.
+
+Other feature functions: \code{\link{hr_change}},
+  \code{\link{max_hr}}, \code{\link{profile_coefficients}},
   \code{\link{resting_hr}}, \code{\link{resting_indeces}},
   \code{\link{slope}}
 }

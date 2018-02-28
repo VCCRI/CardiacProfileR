@@ -38,6 +38,7 @@ add shading or lines to show the sections of a profile for a plot
 Other plotting functions: \code{\link{get_color}},
   \code{\link{get_energy_profiles}},
   \code{\link{min_max_plot}},
+  \code{\link{plot_3d_landscape}},
   \code{\link{plot_3d_profiles}},
   \code{\link{plot_active}},
   \code{\link{plot_features_profiles}},

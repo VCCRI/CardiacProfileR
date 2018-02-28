@@ -7,11 +7,11 @@
 max_hr(profile)
 }
 \arguments{
-\item{profile}{profile used to find maximum heart rate
+\item{profile}{A profile used to find maximum heart rate.
 See \code{\link{get_profile}} for a description of profile.}
 }
 \value{
-value of the maximum heart rate in the profile
+The value of the maximum heart rate in the profile
 }
 \description{
 find the maximum heart rate in the profile
@@ -19,8 +19,9 @@ find the maximum heart rate in the profile
 \seealso{
 \code{\link{get_profile}} for a description of profile.
 
-Other feature functions: \code{\link{coefficients}},
-  \code{\link{get_features}}, \code{\link{hr_change}},
+Other feature functions: \code{\link{get_features}},
+  \code{\link{hr_change}},
+  \code{\link{profile_coefficients}},
   \code{\link{resting_hr}}, \code{\link{resting_indeces}},
   \code{\link{slope}}
 }

@@ -7,11 +7,11 @@
 normalise(profile)
 }
 \arguments{
-\item{profile}{profile to be nomalised
+\item{profile}{profile to be nomalised.
 See \code{\link{get_profile}} for a description of profile.}
 }
 \value{
-profile df that has been normalised
+profile that has been normalised.
     See \code{\link{get_profile}} for a description of profile.
 }
 \description{

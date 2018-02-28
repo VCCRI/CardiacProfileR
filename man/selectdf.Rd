@@ -2,20 +2,20 @@
 % Please edit documentation in R/tcx_loading.R
 \name{selectdf}
 \alias{selectdf}
-\title{Select rows of a dataframe using a regex on the rownames}
+\title{Select rows of a dataframe}
 \usage{
 selectdf(list, regex)
 }
 \arguments{
 \item{regex}{A regular expression used to select elements}
 
-\item{df}{A dataframe with named rownames}
+\item{df}{A dataframe with named rows}
 }
 \value{
-Subset of the original dataframe where the rowname matches \code{regex}
+subset of the original dataframe where the rowname matches \code{regex}
 }
 \description{
-Select rows of a dataframe using a regex on the rownames
+select rows of a dataframe using a regex on the rownames
 }
 \examples{
 df <- t(data.frame("a" = c(1:3), "abba" = c(2:4), "b" = c(3:5)))

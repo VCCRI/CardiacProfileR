@@ -11,10 +11,10 @@ merge_list(dflist)
 with a time column for sorting}
 }
 \value{
-A single dataframe
+a single dataframe
 }
 \description{
-Merges a list of energy dataframes into one single dataframe
+merges a list of energy dataframes into one single dataframe
 }
 \seealso{
 Other load tcx functions: \code{\link{load_tcx_dir}},

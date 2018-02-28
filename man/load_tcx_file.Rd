@@ -2,7 +2,7 @@
 % Please edit documentation in R/tcx_loading.R
 \name{load_tcx_file}
 \alias{load_tcx_file}
-\title{Process a single tcx file and return and energies dataframe.}
+\title{Process a single tcx file}
 \usage{
 load_tcx_file(filename)
 }
@@ -16,12 +16,12 @@ energy dataframe :
 \item totalE  : total energy expenditure
 \item deltaE  : delta energy expenditure
 \item bpm     : heart rate in beats per minute (bpm)
-\item deltaBPM: dela heart rate in beats per minute (bpm)
+\item deltaBPM: delta heart rate in beats per minute (bpm)
 \item time    : POSIXct timestamps
 \item rawbpm  : raw unsmoothed heart rate}
 }
 \description{
-Process a single tcx file and return and energies dataframe.
+process a single tcx file and return and energies dataframe.
 }
 \examples{
 load_tcx_file("topDir/secondLevel/fitbitdata.tcx")

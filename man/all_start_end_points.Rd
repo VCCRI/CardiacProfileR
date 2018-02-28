@@ -2,28 +2,26 @@
 % Please edit documentation in R/activity_extraction.R
 \name{all_start_end_points}
 \alias{all_start_end_points}
-\title{Find start and end of all activities
-find index for start and end of all active periods}
+\title{Find start and end points of all activities}
 \usage{
 all_start_end_points(energy_df, time_threshold = 15, rest_threshold = 5)
 }
 \arguments{
-\item{energy_df}{A dataframe with "energy" format as returned by \code{\link{load_tcx_file}}}
+\item{energy_df}{An energy dataframe as returned by \code{\link{load_tcx_file}}.}
 
-\item{time_threshold}{The minumum number of seconds duration for an activity}
+\item{time_threshold}{The minumum number of seconds duration for an activity.}
 
-\item{rest_threshold}{The maximum number of resting seconds within and activity}
+\item{rest_threshold}{The maximum number of resting seconds within and activity.}
 }
 \value{
 List containing :
 \itemize{
-\item dataframe of all the starting and ending indexes of the activities
-\item padded version of the input dataframe
+\item data frame of all the starting and ending indeces of the activities.
+\item energy data frame where missing data points have been interpolated.
 }
 }
 \description{
-Find start and end of all activities
-find index for start and end of all active periods
+find index for start and end of all active periods in an energy data frame
 }
 \seealso{
 \code{\link{load_tcx_file}} for format of input dataframe
