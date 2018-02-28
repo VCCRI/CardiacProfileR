@@ -30,9 +30,6 @@ library(plotly)
 # XML for working with tcx data
 library(XML)
 
-# load this package
-library(hrdp)
-
 readline("press any key to continue")
 
 ############
