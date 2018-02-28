@@ -1,0 +1,21 @@
+Package: hrdp
+Type: Package
+Title: Generate Heart Rate Dynamic Profiles from TCX Data
+Version: 0.1.0
+Authors@R: c(
+    person("Joshua", "Ho", email = "J.Ho@victorchang.edu.au", role = "cre"),
+    person("Djordje", "Djordjevic", email = "D.Djordjevic@victorchang.edu.au", role = "aut"),
+    person("Sabrina", "Rispin", email = "sabrina.rispin@gmail.com", role = "aut"),
+    person("Beni", "Cawood", email = "beni.cawood@gmail.com", role = "aut"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Contains functionality to load TCX data, calculate energy expenditure,
+    isolate activities, generate heart rate dynamic profiles and plot the results.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.4.2)
+Imports:
+    padr,
+    plotly,
+    XML
+RoxygenNote: 6.0.1
