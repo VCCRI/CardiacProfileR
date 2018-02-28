@@ -30,6 +30,9 @@ library(plotly)
 # XML for working with tcx data
 library(XML)
 
+# load this packages
+library(CardiacProfileR)
+
 readline("press any key to continue")
 
 ############
