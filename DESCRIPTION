@@ -1,4 +1,4 @@
-Package: hrdp
+Package: CardiacProfileR
 Type: Package
 Title: Generate Heart Rate Dynamic Profiles from TCX Data
 Version: 0.1.0
