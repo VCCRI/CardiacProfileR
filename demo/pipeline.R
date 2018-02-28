@@ -37,7 +37,7 @@ readline("press any key to continue")
 ############
 
 # paths to example files and directory
-single_tcx_file_path <- system.file("extdata", "stair_climb.tcx", package = "CardiacProfileR")
+#single_tcx_file_path <- system.file("extdata", "stair_climb.tcx", package = "CardiacProfileR")
 directory_tcx_files <- system.file("extdata", "exercises/", package = "CardiacProfileR")
 
 
