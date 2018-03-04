@@ -13,7 +13,8 @@ Description: Contains functionality to load TCX data, calculate energy expenditu
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Depends: R (>= 3.4.2)
+Depends: R (>= 3.4)
+Suggests: R (>= 3.4.2)
 Imports:
     padr,
     plotly,
