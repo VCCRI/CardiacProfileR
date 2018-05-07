@@ -3,7 +3,7 @@ An R package for extraction and visualisation of heart rate profiles from wearab
 
 The widespread availability of affordable wearable heart rate monitors has enabled collection of personalised heart rate data possible. Here we present an open source R package CardiacProfileR for extraction, analysis and visualistion of heart rate dynamics upon physical exertions from data generated from common wearable heart rate monitors such as Fitbit, Garman and AppleWatch. This package represents a first step in large-scale extractiion of a key personlised cardiovascular phenotype from modern wearable devices.
 
-![](plot3d.PNG =400x)
+![](plot3d.PNG | width=400)
 
 # Installation
 You can install CardiacProfileR using the 'devtools' package:
