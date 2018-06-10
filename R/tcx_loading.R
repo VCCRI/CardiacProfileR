@@ -33,7 +33,7 @@
 #'    Estimation of Energy Expenditure during Walking Including UP/Down Hill.
 #'    In R. Magjarevic & J. H. Nagel (Eds.), World Congress on Medical Physics And Biomedical Engineering 2006,
 #'    441-444.
-load_tcx_file <- function(filename) {
+load_tcx_file <- function(filename, mass = 60) {
     data <- XML::xmlParse(filename)
     xml_data <- XML::xmlToList(data)
 
@@ -99,7 +99,7 @@ load_tcx_file <- function(filename) {
     #######################################
     ## Energy calculation
 
-    mass <- 60
+    ## Mass is passed as a parameter, default is 60kg
 
     #h_displacement <- smooth.spline(unlist(hav.distances), penalty=3)$y
 
