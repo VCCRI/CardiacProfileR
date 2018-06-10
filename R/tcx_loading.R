@@ -3,9 +3,10 @@
 # load TCX files into energy dataframes
 
 #' Process a single tcx file
-#' @description process a single tcx file and return and energies dataframe.
+#' @description process a single tcx file and return an energies dataframe.
 #'
 #' @param filename A filepath to a tcx file (.tcx)
+#' @param mass The person's mass in kg. Default is 60
 #' @return The energies dataframe from the file at \code{filename}
 #' energy dataframe :
 #' \itemize{
